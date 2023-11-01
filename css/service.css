@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8D9297;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #182333;
+} 
+.title{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F9FA !important;
+}
+.title .num{
+    padding: 0 2rem;
+}
+.title .num .me-2 {
+    margin-right: .5rem !important;
+}
+.title .icon{
+    padding: 0 3rem;
+}
+
+
+
+
+#header{
+    background-color:#fff;  
+    padding: 0 40px; 
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+
+}  
+.navbar .navbar-nav .nav-link{
+    margin-left: 30px;
+    padding: 25px 0;
+    color: var(--secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+    transition: all .5s;
+
+}
+.text-primary{
+    color: #FDA12B !important;
+    padding-right: 7px;
+}
+#header .navbar-light .navbar-nav .active>.nav-link {
+    color: #FDA12B;
+ }
+#header .navbar .navbar-nav .nav-link:hover{
+    color: #FDA12B ;
+}
+.home{
+    background-image: url(../img/1.jpg);
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .65);
+    z-index: 1;
+    inset: 0;
+}
+.home .item{
+    position: relative;
+    z-index: 2;
+   text-align: center;
+   background: none;
+}
+.home .item h1{
+    color: #fff;
+    margin-bottom: 1.5rem !important;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 3.5rem;
+}
+.home .breadcrumb{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.home .breadcrumb a{
+    text-decoration: none;
+}
+
+.services{
+    padding: 100px 0;
+}
+.services .text{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+.services .text .left{
+    margin-left: 20px;
+    position: relative;
+}
+.services .text .left::before{
+    content: "";
+    position: absolute;
+    width: 1%;
+    height: 98%;
+    background-color: #FDA12B;
+    left: -20px;
+
+}
+.services .text .h{
+    color: #8D9297 !important;
+    margin-bottom: .5rem !important;
+    font-size: 1rem;
+}
+.services .text .h2{
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.services .text .btn{
+    background-color: #FDA12B;
+    border: none;
+    padding: 0px 60px;
+    border-radius: 0;
+    height: 55px;
+    font-weight: 500;
+    transition: all .5s;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.services .text .btn:hover{
+    background-color: #feb04a;
+}
+.services .col{
+    padding-top: 20px;
+}
+
+.services .card{
+    border: none;
+    text-align: center;
+    border-radius: 0;
+    margin-top: 20px;
+    position: relative;
+    background-color: #feb04a;
+    transition: all .3s;
+}
+.services .card .card-body{
+    background-color: #F8F9FA !important;
+    position: relative;
+    z-index: 1;
+}
+.services .card .card-body::after{
+    content: "";
+    position: absolute;
+    background-color: #FDA12B;
+    inset: 0;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    transition: all .2s;
+}
+.services .card:hover .card-body::after{
+    background-color: #FDA12B;
+    height: 100%;
+    z-index: -1;
+}
+
+.services .card h5{
+    font-size: 1.25rem;
+}
+.services .card img{
+    border-radius: 0;
+}
+.services .card:hover{
+    background-color: #feb04a;
+}
+.services .card:hover h5{
+    color: #fff;
+}
+.services .card:hover p{
+    color: #fff;
+}
+.services .card:hover a{
+    color: #fff;
+}
+.services .card a{
+    color: #FDA12B;
+}
+.services .card a i{
+    margin-left: 10px;
+}
+
+
+
+.company{
+    background-color: #fff;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.company .item{
+    position: relative;
+    z-index: 2;
+}
+.company .item h6{
+    margin-bottom: .5rem !important;
+    font-size: 1rem;
+}
+.company .item h1{
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    
+}
+.company .item .h{
+    margin-left:20px ;
+    position: relative;
+    
+}
+.company .item .h::before{
+    content: "";
+    position: absolute;
+    width: .8%;
+    height: 100%;
+    background-color: #FDA12B;
+    left: -20px;
+
+
+}
+
+
+
+
+.company .item .input{
+    display: flex;
+    justify-content: space-between;  
+}
+.company .item .input input{
+    border-radius: 0;
+    margin-left: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: #F8F9FA !important;
+    border: 0 !important;
+}
+.company .item .last input{
+    background-color: #F8F9FA !important;
+    margin-left: 20px;
+    border-radius: 0;
+    width: 96%;
+    height: 90px;
+    border: 0 !important;
+}
+.company .item .btn{
+    background-color: #FDA12B;
+    width: 96%;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 0;
+    color: #fff;
+    border-color:#FDA12B;
+    font-weight: 500;
+    transition: .5s;
+}
+.company .item .btn:hover{
+    background-color: #feb04a;
+}
+.footer{
+    background-color: #182333;
+    position: relative;
+    overflow: hidden;
+}
+.footer .text-white i{
+    padding-right: 15px;
+}
+.footer .d-flex a{
+    border-color: #FDA12B;
+    transition: all .5s;
+}
+.footer .d-flex a:hover{
+    background-color: #FDA12B;
+}
+.footer .d-flex a i{
+    color: #FDA12B;
+    transition: all .5s;
+
+}
+.footer .d-flex a:hover i{
+    color: #fff;
+}
+.footer  .i1 i{
+    padding-right: 15px;
+}
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #999999;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+}
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #999999;
+    margin-right: 10px;
+}
+.footer .input{
+    position: relative;    
+}
+.footer .input input{
+    background-color: #182333;
+    border-radius: 0;
+    height: 50px;
+}
+
+.footer .input .input-group-append .btn{
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    padding: 8px 17px;
+    border: none;
+    background-color: #FDA12B;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 500;
+    transition: all .5s;
+}
+.footer .input .input-group-append .btn:hover{
+    background-color: #feb04a;
+
+}
+.footer .last{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.footer .last a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s;
+}
+.footer .last a:hover{
+    color: #FDA12B;
+}
+
+.footer .last .left{
+    position: relative;
+}
+
+.footer .last .right{
+    position: relative;
+}
+.footer .last .right .p1{
+    position: absolute;
+    right: 20px;
+    padding-top: 33px;
+}
+.footer .last .right .p2{
+    position: absolute;
+    right: 20px;
+}
+.footer .btn2{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    padding: 15px 20px;
+    background-color: #FDA12B;
+    border-radius: 0;
+    transition: all .5s;
+}
+.footer .btn2:hover{
+    background-color: #fdab3f;
+}
+
+.footer .container-fluid::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.708);
+    width: 100%;
+    height: .2%;
+    bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    .home {
+        height: 75vh;
+        background-position: center;
+    }
+    .home .item h1{
+        font-size: 36px;
+    }
+    .uniqe .item2 img{
+        width: 55vh;
+        height: 40vh;
+    }
+    .uniqe .item1{
+        padding-top: 70px;
+    }
+    .our .item2 img {
+        width: 95%;
+    }
+    .our .item2 .overlay{
+        top: -15px;
+
+    }
+    .our .item1 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .company .item p{
+       margin-bottom: 3rem;
+    }
+    .worker .image{
+        padding-top: 20px;
+    }
+    .client .item{
+        padding-top: 30px;
+    }
+    .footer .d-flex{
+        margin-bottom: 20px;
+    } 
+
+    .footer .btn2{
+        display: none;
+    }
+
+   
+
+}
+ @media screen and (max-width:600px) {
+    .home {
+        height: 50vh;
+        background-position: center;
+    }
+    .home .item h1{
+        font-size: 27px;
+    }
+    .uniqe .item2 .overlay{
+        width: 45%;
+    }
+    .uniqe .item2 img{
+        width: 43vh;
+    }
+    .uniqe .item2 .overlay .child{
+        padding: 30px 10px;
+    }
+    .uniqe .item2 .overlay .child h1{
+        font-size: 22px;
+        padding-left: 30px;
+    }
+    .our .item2 img {
+        width: 95%;
+    }
+    .our .item2 .overlay{
+        top: -15px;
+        width: 180px;
+    height: 180px;
+    }
+    .our .item1 i {
+        top: 28px;
+    font-size: 30px;
+    }
+    .our .item1 .p2{
+        padding-top: 10px;
+    }
+
+    .our .item2 .overlay .child h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .our .item h1::before{
+        left: -10px;
+    }
+    .our .item1 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .services .text .h2{
+        font-size: 20px;
+    }
+    .services .text .btn{
+        padding: 0px 15px;
+        height: 50px;
+    }
+    .company{
+        height: 90vh;
+    }
+    .worker .image{
+        padding-top: 20px;
+    }
+    .worker .text .left p{
+        font-size: 14px;
+    }
+    .worker .text h1 {
+        font-size: 20px;
+    }
+    .client .item{
+        padding-top: 30px;
+    }
+    .client .icon .p1{
+        font-size: 20px;
+    }
+    .client .icon .p2{
+        font-size: 20px;
+    }
+    .footer .d-flex{
+        margin-bottom: 20px;
+    } 
+    .footer .last .right .p1{
+        bottom: 3px;
+        font-size: 12px;
+    }
+    .footer .last .right .p2{
+        font-size: 12px;
+    }
+    .footer .last .left p{
+        font-size: 12px;
+    }
+    .footer .btn2{
+        display: none;
+    }
+    
+ }
+ @media screen and (max-width:400px) {
+    .home {
+        height: 50vh;
+        background-position: center;
+    }
+    .home .item h1{
+        font-size: 22px;
+    }
+    .home .item h5{
+        font-size: 15px;
+    }
+    .home .item p{
+        font-size: 15px;
+    }
+    .uniqe .item2 img{
+        width: 43vh;
+    }
+    .uniqe .item2 .overlay{
+        width: 20vh;
+        height: 17vh;
+        left: -30px;
+    }
+    .uniqe .item2 .overlay .child{
+        padding: 20px 10px;
+    }
+    .uniqe .item2 .overlay .child h1{
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 25px;
+    }
+    .our .item2 img {
+        width: 95%;
+    }
+    .our .item2 .overlay{
+        top: -15px;
+        width: 160px;
+        height: 160px;
+    }
+    .our .item1 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .services .text .btn{
+        padding: 0px 5px;
+        height: 50px;
+    }
+    .company{
+        height: 100vh;
+    }
+    .worker .image{
+        padding-top: 20px;
+    }
+    .worker .text .left p{
+        font-size: 12px;
+    }
+    .worker .text h1 {
+        font-size: 25px;
+    }
+    .client .item{
+        padding-top: 30px;
+    }
+    .footer .d-flex{
+        margin-bottom: 20px;
+    } 
+
+    .footer .btn2{
+        display: none;
+    }
+
+   
+
+  
+ }
